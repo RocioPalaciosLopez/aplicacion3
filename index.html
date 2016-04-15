@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Volcane Popocatepètl</h1>
+  </div> 
+<div data-role="main" class="ui-content"> 
+  <div data-role="collapsible" data-content-theme="false" align="center">
+    <h1>Popocatépetl</h1>
+    <div>
+      <p>El Popocatépetl es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México.</p>
+      <br>
+    </div>
+    <div>
+      <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v16','','imagenes/popocatepetl.jpg',1)"><img src="imagenes/antiguedad1.jpg" width="50%" id="v16" /></a></p>
+    </div>
+     <div>
+          <p><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/"></a></p>
+          <p>
+          Mas informacion en CENAPRED
+          </p>
+        </div>
+   </div>
+  
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Otros Volcanes</h1>
+    <div>
+      <h3>Volcan en Estados Unidos</h3>
+     </div>
+    <br>
+    <div>
+      <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v19','','imagenes/1.jpg',1)"><img src="imagenes/123.jpg" width="50%" id="v19" /></a></p> 
+    </div>
+    <br>
+    <div>
+      <h3>Monte fuji</h3>
+     </div>
+     <div>
+     <img src="imagenes/Monte Fuji 2.jpg" width="50%">
+        </div>
+    <br>
+  </div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwon.html".html" style="width:900px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+  <br>
+  <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Volcan "Popocatepetl" en Mexico </h2>
+        <p>Muestra informacion</p>
+        </a>
+      </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Volcan "Yellowstone" en  Estados Unidos</h2>
+        <p>Muestra información </p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Volcan "Monte Fuji" en Japòn</h2>
+        <p>Muestra información </p>
+        </a>
+      </li>
+    </ul>
+  </div> 
+  </div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+   <h4>Aplicacion Tres</h4>
+        <div>
+          <img src="imagenes/volcan.png" width="46" height="46">
+        </div>
+        <div>
+          <h4>Rocio Pacios Lopez</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Volcan Popocatèpetl</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h3>Tamaño De Popocatepetl</h3>
+    <p>Su altura es de 5500 msnm, es de forma cónica, tiene un diámetrode 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m.
+      </p>
+      <br>
+      <img src="imagenes/popocatepetl.jpg"  width="300" height="200">
+      </div>
+      <br>
+       <div>
+      <h3>Antiguedad:</h3>
+      <p>
+      tiene una entiguedad aproximada de 730 000 años
+      </p>
+      <br>
+      <img src="imagenes/antiguedad1.jpg"  width="300" height="200">
+      </div>
+      <br>
+        <div>
+      <h3>monitoreo:</h3>
+      <p>
+     El Centro Nacional de Prevención de Desastres (Cenapred) informó que en las últimas 24 horas el sistema de monitoreo del volcán Popocatépetl registró 40 
+      </p>
+      <br>
+      <img src="imagenes/monitoreo.jpg"  width="300" height="200">
+      </div>
+      <div>
+       <h3>Localizacion:</h3>
+      <p>El Popocatépetl es un volcán activo localizado en México, en los estados de Morelos, Puebla y México. La ubicación exacta del volcán es 19.02 N, 98.62 W, esto es a 70 km al sureste de la ciudad de México
+      </p>
+      </div>
+       <br>
+      <div>
+      <img src="imagenes/localizacion.jpg" width="300" height="200">
+      </div>
+      <div>
+      <h3>Actividad</h3>
+      <p>El Popocatépetl es conocido por sus alta actividad volcánica, que se presenta comúnmente. Desde que se reactivó, en 1997, hasta el momento, ha presentado una serie de erupciones de las cuales la más violenta ha sido la del año 2000, y la última la noche del 4 y madrugada del 5 de noviembre de 2014. El volcán es uno de los más monitoreados del mundo y también es uno de los más peligrosos y que amenaza más de 26 millones de personas
+      </p>
+      <img src="imagenes/actividad.jpg" width="250" height="150">
+      </div>
+      <br>
+       <div>
+      <h3>Medidas de prevenciò en caida de ceniza:</h3>
+      <p>1.	Por qué es peligrosa: La ceniza volcánica puede genera irritación de las vías respiratorias e infección en los ojos, incluso cuando las partículas son de un tamaño menor a 2.5 micras pueden llegar hasta los pulmones, ya que los vellos de la nariz sólo retienen partículas mayores de 10 micras, de acuerdo con Prócoro Gamero Melo, investigador del Centro de Investigación y de Estudios Avanzados (Cinvestav) Unidad Saltillo.
+      2.	Enfermedad: El investigador de la Sección de Recursos Naturales y Energéticos del Cinvestav Saltillo, dijo que después de una exposición prolongada podría generar enfermedades como la silicosis, una enfermedad pulmonar irreversible que se desarrolla por la inhalación continua de partículas de polvo que entran al organismo por las vías respiratorias, desencadenando la fibrosis nodular de los pulmones, en donde, el tejido pulmonar blando se vuelve fibroso afectando la 
+ 
+
+      </p>
+      <br>
+      <img src="imagenes/madidas de prebencion.jpg"  width="300" height="200">
+      </div>
+      <br>
+      <div>
+      <h3>En una erupcion que estados afectaria:</h3>
+      <p>
+Zonas de riesgo por erupción del volcán Popocatépetl:
+1. Estado de México   3. Morelos
+2. Puebla	 	      4. Tlaxcala
+
+      </p>
+      <br>
+      <img src="imagenes/Ubicación.jpg"  width="300" height="200">
+      </div>
+      <br>
+      </div>
+   <div data-role="footer" data-theme="b">
+     <h4>Rocio Palacios Lopez</h4>
+   </div>
+  
+</div>
+   
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Volcan Yellowstone</h1>
+  </div>
+  <div data-role="content" align="center">
+     <div>
+      <h3>Medidas de prevencion en caida de ceniza</h3>
+      
+      <div>
+       <center><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/medida.jpg',1)"><img src="imagenes/ceniza1.jpg" width="317" height="294" id="Image2" /></a></center>
+     </div>
+     
+       <h3>Tamaño:</h3>
+      <p>Su altura es de 5500 msnm, es de forma cónica, tiene un diámetrode 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m.
+      </p>
+      
+       <div>
+        <h3>Antiguedad:</h3>
+          <p>
+          hace 640.000 años
+          </p>
+           <br>
+        <div>
+        <img src="imagenes/123.jpg"  width="300" height="200">
+        </div>
+        </div>
+        
+      <br>
+      
+      <div>
+        <h3>monitoreo:</h3>
+         
+        <br>
+        
+        <div>
+        <img src="imagenes/monitoreo1.jpg"  width="300" height="200">
+        </div>
+      </div>
+      <br>
+      
+      <div>
+       <h3>Localizacion:</h3>
+         <br>
+        <div>
+        <img src="imagenes/mapa.jpg" width="300" height="200">
+        </div>
+       </div>
+       <br>
+       
+      <div>
+        <h3>Actividad</h3>
+        <p>La caldera se encuentra sobre un punto caliente, donde la roca fundida caliente del manto sube hacia la superficie
+        </p>
+        <div>
+        <img src="imagenes/1.jpg" width="250" height="150">
+        </div>
+        
+        <br>
+        <div>
+        <h3>En una erupcion que estados afectaria:</h3>
+        </div>
+        
+        <div>
+        <br>
+        <img src="imagenes/estado1.jpg"  width="300" height="200">
+        </div>
+      </div>
+      
+    
+     </div>
+     </div>
+     
+      <div data-role="footer" data-theme="b">
+        <h4>Rocio Palacios Lopez</h4>
+        </div>
+       </div>
+      </div>
+      
+      <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Monte Fuji</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h3>Localidad</h3>
+        <p> Se encuentra en Japón, entre las prefecturas de Shizuoka y Yamanashi; en el Japón central y justo al oeste de Tokio.</p>
+        <h3>Antiguedad</h3>
+        <p> La antigüedad del Monte Fuji se remonta a la era Yayoi (300-250 a.C.).</p>
+        <img src="imagenes/antiguedad.jpg" width="30%" height="30%">
+        <h3>Tamaño</h3>
+        <p> Tiene una medida 30 kilómetros a su base, 3.776 metros de altitud, dando un volumen de 870 km3 de este estratovolcán. Está coronado por un cráter de 500 a 700 metros de diámetro y una profundidad de entre 100 y 250 metros. </p>
+        <h3>Actividad</h3>
+        <p> Su última erupción data de 1707, por lo que es considerado poco peligroso.
+        <div>
+        <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v18','','imagenes/volcan18.jpg',1)"><img src="imagenes/volcan13.jpg" width="50%" id="v18" /></a></p>
+        </div>
+        <h3>Rango de Afectacion</h3>
+        <p> Aproximadamente unos 100 kilómetros al suroeste de Tokio.</p>
+        <img src="imagenes/volcan14.jpg" width="30%" height="30%">
+        <h3>Medidas de prevencion</h3>
+        <p></p> En caso de que el volcán entre en erupción se aprobó un plan para esta situación:
+        <p>El plan llama a los residentes a seguir para refugios en edificios resistentes se más de 30 centímetros de cenizas se acumulan en el suelo.
+Se calculó el número de personas que tienen que evacuar debido a cenizas de una posible erupción.
+Se predijo que hasta 406 mil personas tendrían que evacuar en Kanagawa, 62 mil en Shizuoka y mil en Yamanashi. Eso se basa en los datos estimados de la última erupción del volcán que ocurrió hace más de 300 años.
+El panel predice que hasta 131 mil personas tendrían que evacuar si la lava fluye principalmente hacia la ciudad de Fuji, Shizuoka.</p>
+      <img src="imagenes/madida1.jpg" width="50%" height="50%">
+      </div>
+      </div>
+       
+
+    <div data-role="footer" data-theme="b">
+      <h4>Rocio Palacios Lopez</h4>
+     </div>
+     </div>
+    </div>
+</body>
+</html>
